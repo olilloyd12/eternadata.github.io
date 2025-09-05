@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - EternaData</title>
+    <meta name="description" content="You are currently offline. Please check your internet connection.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #334155;
+            padding: 20px;
+        }
+
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .offline-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #0066ff, #00d4ff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        .offline-icon svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1e293b;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #64748b;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .retry-section {
+            margin-bottom: 32px;
+        }
+
+        .retry-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: #0066ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .retry-btn:hover {
+            background: #0052cc;
+            transform: translateY(-2px);
+        }
+
+        .offline-features {
+            text-align: left;
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .offline-features h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1e293b;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            color: #475569;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #0066ff;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-top: 32px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #0066ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .connection-status {
+            margin-top: 24px;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .connection-status.offline {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+
+        .connection-status.online {
+            background: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+        }
+
+        @media (max-width: 480px) {
+            .offline-container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM13 17h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+        </div>
+        
+        <h1>You're Offline</h1>
+        <p class="subtitle">
+            It looks like you've lost your internet connection. Don't worry – you can still view some cached content while offline.
+        </p>
+
+        <div class="retry-section">
+            <button class="retry-btn" onclick="checkConnection()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                </svg>
+                Try Again
+            </button>
+        </div>
+
+        <div class="connection-status offline" id="connectionStatus">
+            🔴 No internet connection
+        </div>
+
+        <div class="offline-features">
+            <h2>What You Can Still Do Offline</h2>
+            <ul class="feature-list">
+                <li>Browse previously visited pages</li>
+                <li>View cached service information</li>
+                <li>Read about our data transformation process</li>
+                <li>Access contact information below</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p><strong>Sales:</strong> <a href="mailto:sales@eternadata.com">sales@eternadata.com</a></p>
+            <p><strong>Support:</strong> <a href="mailto:support@eternadata.com">support@eternadata.com</a></p>
+            <p>We respond within 24 hours</p>
+        </div>
+    </div>
+
+    <script>
+        // Check connection status
+        function updateConnectionStatus() {
+            const statusEl = document.getElementById('connectionStatus');
+            if (navigator.onLine) {
+                statusEl.textContent = '🟢 Back online!';
+                statusEl.className = 'connection-status online';
+            } else {
+                statusEl.textContent = '🔴 No internet connection';
+                statusEl.className = 'connection-status offline';
+            }
+        }
+
+        // Check connection and redirect if online
+        function checkConnection() {
+            updateConnectionStatus();
+            
+            if (navigator.onLine) {
+                // Try to fetch the main page to verify connection
+                fetch('/', { 
+                    method: 'HEAD',
+                    cache: 'no-cache'
+                }).then(response => {
+                    if (response.ok) {
+                        window.location.href = '/';
+                    }
+                }).catch(() => {
+                    // Still offline or network error
+                    setTimeout(() => {
+                        updateConnectionStatus();
+                    }, 1000);
+                });
+            }
+        }
+
+        // Listen for online/offline events
+        window.addEventListener('online', () => {
+            updateConnectionStatus();
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
+        });
+
+        window.addEventListener('offline', updateConnectionStatus);
+
+        // Check connection status on load
+        document.addEventListener('DOMContentLoaded', updateConnectionStatus);
+
+        // Periodic connection check
+        setInterval(checkConnection, 30000); // Check every 30 seconds
+    </script>
+</body>
+</html>
