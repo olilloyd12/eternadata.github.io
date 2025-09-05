@@ -1,0 +1,130 @@
+{
+  "name": "EternaData - Professional Data Transformation Services",
+  "short_name": "EternaData",
+  "description": "Transform messy data into clear business insights with professional data cleaning, visualization, and organization services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066ff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "EternaData Dashboard"
+    },
+    {
+      "src": "assets/screenshot-narrow.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "EternaData Mobile"
+    }
+  ],
+  "icons": [
+    {
+      "src": "assets/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get Quote",
+      "short_name": "Quote",
+      "description": "Get a free quote for your data transformation project",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/shortcut-quote.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Services",
+      "short_name": "Services",
+      "description": "Explore our data transformation services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/shortcut-services.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Pricing",
+      "short_name": "Pricing",
+      "description": "View our transparent pricing packages",
+      "url": "/#pricing",
+      "icons": [
+        {
+          "src": "assets/shortcut-pricing.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred"
+}
