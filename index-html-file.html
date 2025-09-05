@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enhanced Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-script123'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <!-- SEO Meta Tags -->
+    <title>EternaData — Transform Messy Data Into Clear Insights</title>
+    <meta name="description" content="Professional data transformation services. We clean, organize and visualize your business data into actionable insights. Manual processing ensures accuracy.">
+    <meta name="keywords" content="data transformation, data cleaning, data visualization, business intelligence, spreadsheet organization, data analysis, dashboard creation">
+    <meta name="author" content="EternaData">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eternadata.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="EternaData — Transform Messy Data Into Clear Insights">
+    <meta property="og:description" content="Professional data transformation services. Clean, organize and visualize your business data into actionable insights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eternadata.com">
+    <meta property="og:image" content="https://eternadata.com/assets/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EternaData — Transform Messy Data Into Clear Insights">
+    <meta name="twitter:description" content="Professional data transformation services.">
+    <meta name="twitter:image" content="https://eternadata.com/assets/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#0066ff">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/styles.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "EternaData",
+      "description": "Professional data transformation and visualization services",
+      "url": "https://eternadata.com",
+      "serviceType": "Data Analysis and Visualization"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo" onclick="scrollToSection('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Bar Chart -->
+                            <rect x="15" y="45" width="12" height="20" fill="#0066ff" rx="2"/>
+                            <rect x="35" y="35" width="12" height="30" fill="#0066ff" rx="2"/>
+                            <rect x="55" y="20" width="12" height="45" fill="#0066ff" rx="2"/>
+                            
+                            <!-- Curved Arrow -->
+                            <path d="M 20 50 Q 35 30, 50 35 Q 65 40, 80 25" 
+                                  stroke="#00d4ff" 
+                                  stroke-width="3" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                            
+                            <!-- Arrow Head -->
+                            <path d="M 75 20 L 82 25 L 78 32 Z" fill="#00d4ff"/>
+                            
+                            <!-- Subtle gradient overlay on bars for depth -->
+                            <defs>
+                                <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0052cc;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <rect x="15" y="45" width="12" height="20" fill="url(#barGradient)" rx="2"/>
+                            <rect x="35" y="35" width="12" height="30" fill="url(#barGradient)" rx="2"/>
+                            <rect x="55" y="20" width="12" height="45" fill="url(#barGradient)" rx="2"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">EternaData</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a onclick="scrollToSection('services')">Services</a></li>
+                    <li><a onclick="scrollToSection('future')">Future</a></li>
+                    <li><a onclick="scrollToSection('process')">Process</a></li>
+                    <li><a onclick="scrollToSection('benefits')">Benefits</a></li>
+                    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+                <button class="cta-button" onclick="scrollToSection('contact')">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in">
+                    <h1>Transform <span class="gradient-text">Messy Data</span> Into Clear Business Insights</h1>
+                    <p>We take your chaotic spreadsheets and turn them into organized, visual, and actionable business intelligence. No advice, just pure data clarity.</p>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">Start Your Project</button>
+                        <button class="btn-secondary" onclick="scrollToSection('services')">Learn More</button>
+                    </div>
+                </div>
+                <div class="dashboard-preview fade-in">
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-value" id="revenue">£0</div>
+                            <div class="metric-label">Revenue</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="growth">0%</div>
+                            <div class="metric-label">Growth</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="efficiency">0%</div>
+                            <div class="metric-label">Efficiency</div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-bars">
+                            <div class="bar" style="--height: 60%; --delay: 1;"></div>
+                            <div class="bar" style="--height: 80%; --delay: 2;"></div>
+                            <div class="bar" style="--height: 45%; --delay: 3;"></div>
+                            <div class="bar" style="--height: 90%; --delay: 4;"></div>
+                            <div class="bar" style="--height: 70%; --delay: 5;"></div>
+                            <div class="bar" style="--height: 85%; --delay: 6;"></div>
+                            <div class="bar" style="--height: 55%; --delay: 7;"></div>
+                            <div class="bar" style="--height: 75%; --delay: 8;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating particles -->
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 9s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 12s;"></div>
+    </section>
+
+    <!-- Current Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Current Services</h2>
+                <p>Professional data transformation services delivered manually with care and precision</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Cleaning & Organization</h3>
+                    <p>We manually clean and structure your messy spreadsheets, removing duplicates, fixing inconsistencies, and standardizing formats for crystal-clear data.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📈</div>
+                    <h3>Visual Data Representation</h3>
+                    <p>Transform numbers into beautiful, easy-to-understand charts and graphs that reveal patterns, trends, and insights at a glance.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🧮</div>
+                    <h3>Business Calculations</h3>
+                    <p>Perform complex calculations on your data including profit margins, growth rates, averages, and custom KPIs specific to your business needs.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📝</div>
+                    <h3>Brief Reports</h3>
+                    <p>Receive concise, factual reports that summarize your data findings without interpretation or advice - just clear, actionable information.</p>
+                </div>
+            </div>
+            <div class="disclaimer fade-in">
+                <strong>Important:</strong> We are not licensed financial advisors or accountants. Our services focus solely on data organization, visualization, and calculation - not financial advice or accounting services.
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Services Section -->
+    <section class="future-services" id="future">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Coming Soon: <span class="gradient-text">Automated Platform</span></h2>
+                <p>We're developing powerful software to revolutionize how businesses handle their data</p>
+            </div>
+            <div class="future-content">
+                <div class="future-text fade-in">
+                    <h3>Next-Generation Data Processing</h3>
+                    <p>Our upcoming software platform will transform the speed and scale at which we can process your business data, while maintaining the quality you expect.</p>
+                    <ul class="future-features">
+                        <li>Lightning-fast automated data cleaning</li>
+                        <li>Real-time dashboard generation</li>
+                        <li>Historical data tracking and comparison</li>
+                        <li>Instant report generation</li>
+                        <li>Cloud-based secure storage</li>
+                        <li>API integrations with popular tools</li>
+                        <li>Custom alert systems for key metrics</li>
+                    </ul>
+                </div>
+                <div class="software-preview fade-in">
+                    <div class="software-header">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <span style="margin-left: auto; font-size: 0.875rem;">EternaData Platform v2.0</span>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <div style="background: var(--bg-light); border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                            <div style="color: var(--text-gray); font-size: 0.875rem;">Processing Speed</div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">10x Faster</div>
+                        </div>
+                        <div style="background: var(--bg-light); border-radius: 8px; padding: 1rem;">
+                            <div style="color: var(--text-gray); font-size: 0.875rem;">Data Points Analyzed</div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">Unlimited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Simple Process</h2>
+                <p>From messy data to clear insights in four easy steps</p>
+            </div>
+            <div class="process-steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Send Your Data</h3>
+                    <p>Upload your spreadsheets or raw data files securely</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>We Clean & Organize</h3>
+                    <p>Manual processing to ensure accuracy and consistency</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Create Visualizations</h3>
+                    <p>Transform numbers into meaningful charts and graphs</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Deliver Results</h3>
+                    <p>Receive your organized data with visual reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose EternaData</h2>
+                <p>Professional data transformation you can trust</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Professional service at competitive rates</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Get your cleaned data and reports within 48-72 hours</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Accuracy Guaranteed</h3>
+                    <p>Manual verification ensures 100% data accuracy</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Secure & Confidential</h3>
+                    <p>Your data is encrypted and never shared</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="section-header fade-in">
+                    <h2>Ready to Transform Your Data?</h2>
+                    <p>Get in touch and let's discuss your data needs</p>
+                </div>
+                <div class="contact-info fade-in">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 102, 255, 0.1);">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">💼 Start Your Project</h3>
+                            <p style="margin-bottom: 1.5rem;">Ready to transform your data? Send us your requirements and we'll provide a custom quote within 24 hours.</p>
+                            <a href="mailto:sales@eternadata.com" class="email-link">sales@eternadata.com</a>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 102, 255, 0.1);">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">💬 General Inquiries</h3>
+                            <p style="margin-bottom: 1.5rem;">Have questions about our services or need support? We're here to help with any queries you may have.</p>
+                            <a href="mailto:support@eternadata.com" class="email-link">support@eternadata.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EternaData. All rights reserved.</p>
+                <p>Professional Data Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/script.js" nonce="script123"></script>
+</body>
+</html>
