@@ -1,0 +1,26 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Data visualization bars -->
+  <rect x="8" y="28" width="6" height="12" fill="#0066ff" rx="1"/>
+  <rect x="18" y="22" width="6" height="18" fill="#0066ff" rx="1"/>
+  <rect x="28" y="16" width="6" height="24" fill="#0066ff" rx="1"/>
+  <rect x="38" y="20" width="6" height="20" fill="#0066ff" rx="1"/>
+  
+  <!-- Trend line -->
+  <path d="M 11 34 Q 21 25, 31 28 Q 38 30, 41 22" stroke="#00d4ff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Arrow -->
+  <path d="M 39 20 L 43 22 L 40 25 Z" fill="#00d4ff"/>
+  
+  <!-- Company name -->
+  <text x="56" y="20" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+    EternaData
+  </text>
+  
+  <!-- Tagline -->
+  <text x="56" y="34" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#64748b">
+    Transform Data Into Insights
+  </text>
+  
+  <!-- Background circle for visual appeal -->
+  <circle cx="25" cy="24" r="20" fill="none" stroke="#f1f5f9" stroke-width="1" opacity="0.5"/>
+</svg>
