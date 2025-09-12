@@ -257,16 +257,26 @@ nav.scrolled {
     width: 40px;
     background: linear-gradient(180deg, var(--primary), var(--accent));
     border-radius: 4px 4px 0 0;
-    animation: grow 3s ease-in-out infinite;
+    animation: grow 4s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    animation-delay: calc(var(--delay) * 0.05s);
     will-change: transform;
 }
 
 @keyframes grow {
-    0%, 100% { 
+    0% { 
         transform: scaleY(1);
     }
+    25% { 
+        transform: scaleY(1.02);
+    }
     50% { 
-        transform: scaleY(1.05);
+        transform: scaleY(1.04);
+    }
+    75% { 
+        transform: scaleY(1.02);
+    }
+    100% { 
+        transform: scaleY(1);
     }
 }
 
