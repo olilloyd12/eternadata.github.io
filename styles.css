@@ -254,30 +254,16 @@ nav.scrolled {
 }
 
 .bar {
-    width: 40px;
+    width: 30px;
     background: linear-gradient(180deg, var(--primary), var(--accent));
     border-radius: 4px 4px 0 0;
-    animation: grow 4s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
-    animation-delay: calc(var(--delay) * 0.05s);
-    will-change: transform;
+    animation: grow 2s ease-out infinite;
+    animation-delay: calc(var(--delay) * 0.1s);
 }
 
 @keyframes grow {
-    0% { 
-        transform: scaleY(1);
-    }
-    25% { 
-        transform: scaleY(1.02);
-    }
-    50% { 
-        transform: scaleY(1.04);
-    }
-    75% { 
-        transform: scaleY(1.02);
-    }
-    100% { 
-        transform: scaleY(1);
-    }
+    0%, 100% { height: var(--height); }
+    50% { height: calc(var(--height) * 1.2); }
 }
 
 .metrics-row {
