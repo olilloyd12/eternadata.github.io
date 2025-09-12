@@ -408,7 +408,7 @@ nav.scrolled {
 }
 
 .future-features li::before {
-    content: 'âœ"';
+    content: '✓';
     display: inline-block;
     width: 24px;
     height: 24px;
