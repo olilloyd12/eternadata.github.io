@@ -408,7 +408,7 @@ nav.scrolled {
 }
 
 .future-features li::before {
-    content: '✓';
+    content: 'âœ"';
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -630,6 +630,7 @@ footer {
     opacity: 0.3;
     border-radius: 50%;
     animation: float-particle 20s infinite linear;
+    pointer-events: none;
 }
 
 @keyframes float-particle {
