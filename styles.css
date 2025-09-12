@@ -254,16 +254,17 @@ nav.scrolled {
 }
 
 .bar {
-    width: 30px;
+    width: 40px;
     background: linear-gradient(180deg, var(--primary), var(--accent));
     border-radius: 4px 4px 0 0;
-    animation: grow 2s ease-out infinite;
-    animation-delay: calc(var(--delay) * 0.1s);
+    animation: grow 3s ease-out infinite;
+    animation-delay: calc(var(--delay) * 0.3s);
+    will-change: height;
 }
 
 @keyframes grow {
     0%, 100% { height: var(--height); }
-    50% { height: calc(var(--height) * 1.2); }
+    50% { height: calc(var(--height) * 1.1); }
 }
 
 .metrics-row {
