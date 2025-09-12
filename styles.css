@@ -258,8 +258,8 @@ nav.scrolled {
     height: var(--height);
     background: linear-gradient(180deg, var(--primary), var(--accent));
     border-radius: 4px 4px 0 0;
-    animation: subtle-pulse 5s ease-in-out infinite;
-    animation-delay: calc(var(--delay) * 0.3s);
+    animation: subtle-pulse 2.5s ease-in-out infinite;
+    animation-delay: calc(var(--delay) * 0.15s);
 }
 
 @keyframes subtle-pulse {
@@ -268,8 +268,8 @@ nav.scrolled {
         opacity: 1;
     }
     50% { 
-        height: calc(var(--height) * 1.02);
-        opacity: 0.9;
+        height: calc(var(--height) * 1.04);
+        opacity: 0.95;
     }
 }
 
